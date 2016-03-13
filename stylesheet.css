@@ -1,2 +1,3 @@
-body{font-family: Comic Sans ms; background-image: url(pictures/background.jpg); background-position: right top;
+body{font-family: Comic Sans ms; background-image: url(pictures/background.jpg); background-position: right top; 
+background-attachment: fixed;
  }
