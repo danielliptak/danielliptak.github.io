@@ -1,3 +1,10 @@
-body{font-family: Comic Sans ms; background-image: url(pictures/background.jpg); background-position: right top; 
+
+body{font-family: cooper black, chiller; font-size: 26px; background-image: url(pictures/background.jpg); background-position: right top; 
 background-attachment: fixed;
  }
+ tbody {color:white;
+ }
+div { width: 220px; height: 220px; background-color: black; border-radius: 2px; text-align: center; margin-top: 20 px;
+filter:alpha(opacity= 50);
+opacity: 0.5;-moz-opacity:0.5;
+}
