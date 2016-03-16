@@ -5,9 +5,8 @@ background-attachment: fixed;
  tbody {color:white;
  }
 div { width: 220px; height: 220px; background-color: black; border-radius: 10px; border: 2px solid;
-filter:alpha(opacity= 50);
-opacity: 0.5;-moz-opacity:0.5; display: flex;
-display: flex; align-items: center; justify-content: center; }
+opacity: 0.5; display: flex;
+align-items: center; justify-content: center; }
 
 table img{border: 2px solid black;
 }
