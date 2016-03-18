@@ -10,3 +10,11 @@ align-items: center; justify-content: center; }
 
 table img{border: 2px solid black;
 }
+
+/*ajánló formázása*/
+#recommendation{
+	
+}
+#div{width: 300px; height: 100px; background-color: black; border-radius: 10px; border: 2px solid;
+opacity: 0.5; display: flex;
+align-items: center; justify-content: center;}
