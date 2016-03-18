@@ -1,7 +1,6 @@
-var A = ;
-if (confirm ("Készen vagy vállalni az időutazással járó felelősséget?")=== True){
-A =(you are wellcome!)
-}
-else {
-A =(bye-bye)
+if (confirm("Vállalod az idoutazassal jaro felelosseget?")===true) {} else {
+	window.location.href = 'http://www.greenfoxacademy.com';
+    }
+function myFunction() {
+    document.getElementById("recommendation").innerHTML = "Western";	
 }
