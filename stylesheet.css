@@ -14,22 +14,15 @@ table img{border: 2px solid black;
 /*ajánló formázása*/
 #recommendation{width: 300px; height: 100px;background-color: black; opacity:0.6; border-radius: 10px; color: white; position: relative; left: 40%;top: 30%;width: 20%;text-align: center;}
 
-#legend_1 {width: 200 px; height: 1200px; float: right; border-radius: 10px; margin: 2px solid; opacity:1.0;}
-
-#legend_1 img
-{
-  max-width: 50%; 
-  max-height: 50%;  
-  margin:auto;
-  display:block;
-}
-
-#legend_2 {width: 200 px; height: 1200px; float: left; border-radius: 10px; margin: 2px solid; opacity:1.0;}
 
 #legend_2 img
 {
-  max-width: 50%; 
-  max-height: 50%;  
-  margin:auto;
-  display:block;
+  max-width: 70%; 
+  max-height: 80%;  
+}
+
+#legend_1 img
+{
+  max-width: 70%; 
+  max-height: 80%;
 }
