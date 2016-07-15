@@ -1,12 +1,8 @@
 'use strict';
 
 var picList =
-['images/1.png',
-'images/2.gif',
-'images/3.gif',
-'images/xhrrequest.png',
+['images/xhrrequest.png',
 'images/callback.png',
-'images/next.png',
 'images/eventlistener.png',
 ];
 
@@ -49,5 +45,5 @@ var galery1 = new Galery(picList);
 var buttonLeft = document.querySelector('.left');
 buttonLeft.addEventListener('click', function () { galery1.stepLeft(); });
 
-var buttonRight = document.querySelector('.right');
+var body = document.querySelector('.right');
 buttonRight.addEventListener('click', function () { galery1.stepRight(); });
