@@ -45,5 +45,5 @@ var galery1 = new Galery(picList);
 var buttonLeft = document.querySelector('.left');
 buttonLeft.addEventListener('click', function () { galery1.stepLeft(); });
 
-var body = document.querySelector('.right');
+var buttonRight = document.querySelector('body');
 buttonRight.addEventListener('click', function () { galery1.stepRight(); });
