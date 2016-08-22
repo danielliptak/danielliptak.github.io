@@ -1,0 +1,112 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-toggle-button/paper-toggle-button.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+
+<dom-module id="new-employee-form">
+  <template>
+
+    <style>
+      :host {
+        box-sizing: border-box;
+      }
+      .form-container {
+        width: 350px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10%;
+        background-color: #ccc;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
+      }
+      .button-container {
+        text-align: center;
+      }
+      iron-icon {
+        margin-right: 10px;
+      }
+      p {
+        font-family: 'Roboto', sans-serif;
+        height: 15px;
+        color: #db1a1a;
+        font-size: 12px;
+      };
+    </style>
+
+    <div class="form-container">
+      <paper-input label="Name" value="{{formValues.name}}">
+        <iron-icon icon="account-circle" prefix></iron-icon>
+        <paper-icon-button
+          suffix on-tap="clearInput"
+          icon="clear" alt="clear" title="clear">
+        </paper-icon-button>
+      </paper-input>
+
+      <paper-input label="Job title" value="{{formValues.job}}">
+        <iron-icon icon="build" prefix></iron-icon>
+        <paper-icon-button
+          suffix on-tap="clearInput"
+          icon="clear" alt="clear" title="clear">
+        </paper-icon-button>
+      </paper-input>
+
+      <paper-input type="Number" label="Age" value="{{formValues.age}}">
+        <iron-icon icon="watch-later" prefix></iron-icon>
+        <paper-icon-button
+          suffix on-tap="clearInput"
+          icon="clear" alt="clear" title="clear">
+        </paper-icon-button>
+      </paper-input>
+
+      <paper-input label="Nickname" value="{{formValues.nick}}">
+        <iron-icon icon="mood" prefix></iron-icon>
+        <paper-icon-button
+          suffix on-tap="clearInput"
+          icon="clear" alt="clear" title="clear">
+        </paper-icon-button>
+      </paper-input>
+      <paper-toggle-button name="Job title" checked="{{formValues.employee}}">
+        Employee
+      </paper-toggle-button>
+
+      <div class="button-container">
+        <paper-button dialog-confirm on-tap="_addNewRecord">OK</paper-button>
+        <paper-button dialog-dismiss >Cancel</paper-button>
+      </div>
+    </div>
+
+  </template>
+
+  <script>
+    Polymer({
+      is: 'new-employee-form',
+
+      properties: {
+        formValues: {
+          type: Object,
+          notify: true,
+          value: {},
+        },
+        newData: {
+          type: Object,
+          notify: true,
+          value: {
+          },
+        },
+      },
+
+      _addNewRecord: function() {
+         this.newData = this.formValues;
+         this.formValues = {};
+      },
+
+      clearInput: function(e) {
+        e.target.parentElement.parentElement.parentElement.parentElement.value = null;
+      },
+
+    });
+  </script>
+</dom-module>
