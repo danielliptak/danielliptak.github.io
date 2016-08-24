@@ -33,10 +33,10 @@
     <paper-button raised onclick="graph.open()">Graph</paper-button>
     <paper-dialog id="graph" entry-animation="scale-up-animation" exit-animation="fade-out-animation">
       <google-chart
-        id = "googleChart"
+        id="googleChart"
         type="pie"
         options='{"title": "Distribution of the age"}'
-        data= ''
+        data=''
         >
       </google-chart>
     </paper-dialog>
@@ -50,8 +50,10 @@
         currentList: {
           notify: true,
           type: Array,
-          observer: '_refreshGraph'
         }
+      },
+      listeners: {
+        'current-list-changed':'_refreshGraph'
       },
 
       _countAges: function(data) {
