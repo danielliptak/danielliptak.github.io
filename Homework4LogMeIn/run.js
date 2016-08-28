@@ -4,7 +4,9 @@
 
 const TicTacToe = (() => {
   const gameMaker = () => {
-    data = JSON.parse(localStorage.getItem('mygame'));
+    if (JSON.parse(localStorage.getItem('mygame'))) {
+      data = JSON.parse(localStorage.getItem('mygame'));
+    }
     boardbuilder.drawBoard();
   };
 
