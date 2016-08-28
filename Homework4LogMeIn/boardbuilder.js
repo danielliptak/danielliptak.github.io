@@ -23,8 +23,8 @@ const boardbuilder = (() => {
   };
 
   const refreshBoard =() => {
-    document.querySelector('.x-score').textContent = data.xWinTimes.toString();
-    document.querySelector('.o-score').textContent = data.oWinTimes.toString();
+    document.querySelector('.x-score').textContent = data.xWinTimes;
+    document.querySelector('.o-score').textContent = data.oWinTimes;
   };
 
   const drawBoard = () => {
