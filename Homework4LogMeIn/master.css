@@ -1,0 +1,69 @@
+canvas {
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin: 5px auto;
+  position: relative;
+  left: 5%;
+  right: 5%;
+}
+
+body {
+  background-image: url('./background1.jpg');
+  background-size: cover;
+  background-color: yellow;
+}
+
+.wrapper{
+  font-family: 'Indie Flower', cursive;
+  max-width: 500px;
+  align-items: center;
+}
+
+div {
+  margin: 5px auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+canvas:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 28px;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+span {
+  color: red;
+}
+button {
+padding: 0px 10px;
+height: 28px;
+line-height: 28px;
+font-size: 25px;
+text-decoration: none;
+font-family: 'Indie Flower', cursive;
+background: transparent;
+border: none;
+text-align: center;
+display: inline-block;
+color: yellow;
+font-weight: bold;
+text-shadow: 0px 1px 0px #416A21;
+border-radius: 3px;
+}
+
+button:hover {
+color: #FFF;
+text-decoration: none;
+text-shadow: 0px -1px 0px #416A21;
+box-shadow: 0px 0px 5px #C1E4A7;
+border: 1px solid #5A7E3E;
+}
