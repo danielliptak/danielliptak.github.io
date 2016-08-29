@@ -13,7 +13,11 @@ const TicTacToe = (() => {
   const delLocalStorage = () => {
     data.map = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
     localStorage.setItem('mygame', JSON.stringify(data));
-    location.reload();
+    let divList = document.querySelectorAll('.rows')
+    for (var i = 0; i < (divList.length); i++) {
+      body.removeChild(divList[i]);
+    }
+    boardbuilder.drawBoard();
   };
 
   const eventController = (e) => {

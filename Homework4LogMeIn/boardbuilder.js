@@ -16,7 +16,7 @@ const boardbuilder = (() => {
 
   const createRow = (index) => {
     const newRow = document.createElement('div');
-    newRow.setAttribute('width', size);
+    newRow.classList = 'rows';
     body.appendChild(newRow);
     newRow.setAttribute('rowId', index);
     return newRow;
