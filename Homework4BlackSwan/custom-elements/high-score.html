@@ -1,0 +1,64 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+
+
+<dom-module id="high-score">
+  <style>
+  .card {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin: 24px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #757575;
+  }
+  paper-item {
+    justify-content: space-between;
+  }
+
+  </style>
+
+  <template>
+    <div class="card">
+      <paper-item><span>Words</span><span>Score</span></paper-item>
+      <template is="dom-repeat" items="{{highScore}}">
+        <paper-item>
+          <span>{{item.word}}</span><span>{{item.score}}</span>
+        </paper-item>
+      </template>
+    </div>
+  </template>
+  <script>
+
+    Polymer({
+      is: 'high-score',
+      properties: {
+
+        highScore: {
+          type: Array,
+          notify: true,
+        },
+
+        // sortedHighScore: {
+        //   type: Array,
+        //   notify: true,
+        // },
+
+      },
+      // listeners: {
+      //   'sorted-high-score-changed':'_refreshList'
+      // },
+
+      _sortingHighScore: function (rawScores) {
+        return rawScores.sort(function(a, b){
+          return b.score-a.score;
+        })
+      },
+
+      // _refreshList: function () {
+      //   location.reload()
+      // },
+
+    });
+  </script>
+</dom-module>
