@@ -39,25 +39,13 @@
           notify: true,
         },
 
-        // sortedHighScore: {
-        //   type: Array,
-        //   notify: true,
-        // },
-
       },
-      // listeners: {
-      //   'sorted-high-score-changed':'_refreshList'
-      // },
 
       _sortingHighScore: function (rawScores) {
         return rawScores.sort(function(a, b){
           return b.score-a.score;
         })
       },
-
-      // _refreshList: function () {
-      //   location.reload()
-      // },
 
     });
   </script>
