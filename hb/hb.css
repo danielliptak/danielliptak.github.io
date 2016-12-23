@@ -1,10 +1,10 @@
 body {
-  background: url("images.jpg") no-repeat center center fixed;
+  background: url("http://3.bp.blogspot.com/-1B2evbPvQ_E/TvAjJVk-vYI/AAAAAAAABS8/mGbtPIxEi7c/s1600/bell6.jpg") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Lobster', cursive;
   text-align: center;
-  color: #186AC1;
+  color: #ffd700;
   letter-spacing: 5px;
   font-size: 20px;
   line-height: 150%;
@@ -19,6 +19,20 @@ img {
   width: 300px;
   height: 201px;
 }
+a:link, a:visited {
+    background-color: transparent;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: blue;
+    opacity: 0.3;
+}
+
 h1 {
   margin-bottom: 5%;
 }
